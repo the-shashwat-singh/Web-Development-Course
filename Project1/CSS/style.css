@@ -1,0 +1,120 @@
+
+/* CSS Reset  */
+body {
+  font-family: "Baloo Bhai", cursive;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("C:\Users\Shashwat Singh\OneDrive\Documents\WEB DEVELOPMENT COURSE\Project1\img\bg.jpg");
+  color: white;
+}
+.header {
+  background-color: black;
+  opacity: 0.5;
+  margin: 0px;
+  position: sticky;
+}
+
+.left {
+  /* border: 2px solid red; */
+  display: inline-block;
+  position: absolute;
+  left: 36px;
+  top: 4px;
+}
+.left img {
+  width: 62px;
+  filter: invert(100%);
+  padding-left: 11px;
+}
+.left div {
+  font-size: 17px;
+  text-align: center;
+  line-height: 12px;
+}
+.mid {
+  display: block;
+  width: 37%;
+  margin: 0px auto;
+  /* border: 2px solid green; */
+}
+.right {
+  /* border: 2px solid yellow; */
+  display: inline-block;
+  position: absolute;
+  right: 34px;
+  top: 14px;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 34px 23px;
+}
+.navbar li a:hover,
+.navbar li a:active {
+  color: grey;
+
+  text-decoration: underline;
+}
+.btn1 {
+  margin: 0px 9px;
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+  background-color: black;
+  padding: 4px 14px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.btn2 {
+  margin: 0px 9px;
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+  background-color: black;
+  padding: 4px 14px;
+  border: 2px solid grey;
+  border-radius: 52px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: rgb(49, 47, 47);
+}
+.btn2:hover {
+  background-color: rgb(10 208 40);
+}
+.container {
+  border: 2px solid rgb(255, 255, 255);
+  margin: 106px 80px;
+  padding: 75px;
+  width: 33%;
+  border-radius: 25px;
+  position: absolute;
+  right: -25px;
+}
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 508px;
+  padding: 1px;
+  border: 2px solid black;
+  margin: 11px auto;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Baloo Bhai", cursive;
+}
+.container h1 {
+  text-align: center;
+}
+.container button {
+  display: block;
+  width: 508px;
+  margin: 15px auto;
+}

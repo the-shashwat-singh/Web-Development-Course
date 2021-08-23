@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid + Media Quries</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section aside"
+        "footer footer footer footer";
+    }
+    @media only screen and (max-width: 300px) {
+      body {
+        background-color: red;
+      }
+      span{
+          display: block;
+          text-align: center;
+      }
+      aside{
+          display: none;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+      body {
+        background-color: blue;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      span{
+          display: block;
+          text-align: center;
+      }
+      aside{
+          display: none;
+      }
+    }
+    @media only screen and (min-width: 500px) and (max-width: 800px) {
+      body {
+        background-color: yellow;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      span{
+          display: block;
+          text-align: center;
+      }
+    }
+    @media only screen and (min-width: 800px) {
+      body {
+        background-color: green;
+      }
+    }
+    .bdr {
+      border: 2px solid black;
+      padding: 23px;
+      background-color: wheat;
+    }
+    nav {
+      grid-area: navbar;
+    }
+    section {
+      grid-area: section;
+    }
+    aside {
+      grid-area: aside;
+    }
+    footer {
+      grid-area: footer;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+          <span>Home</span>
+          <span>About</span>
+          <span>Services</span>
+          <span>Contact</span>
+      </nav>
+      <section class="bdr">
+        <h2>Learn CSS in Hindi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati libero molestiae ullam modi, unde amet doloribus iusto! Officiis dolorem, beatae officia quisquam dignissimos, repellat placeat nam facere esse natus quos veniam obcaecati ab eum blanditiis, adipisci modi mollitia saepe? Sequi deleniti dolor labore minus. Temporibus ab animi non perspiciatis, aut minima deleniti tempore aperiam deserunt labore suscipit hic quas maxime vel, dolorem adipisci inventore ullam aliquid? Accusantium, officia repellendus totam incidunt ex cumque adipisci similique dignissimos nulla consectetur quisquam unde esse beatae magnam dolorum nisi minus eum, iste illum suscipit. Eius quas sed reprehenderit, vero enim veritatis doloremque ratione perferendis. Expedita vitae facere illum sint voluptatibus libero corrupti, deserunt, tenetur illo doloribus, ipsa eligendi totam aliquid! Deleniti natus inventore distinctio ab debitis cupiditate! Fugiat laboriosam at delectus, totam maiores veniam corporis quae debitis illum accusantium alias eos molestias expedita beatae eligendi reprehenderit aperiam ipsum nulla, deleniti in labore consequatur odit quod! Eaque eum hic quae facere cumque doloribus. Voluptate qui tenetur culpa, ex quo illo quod reprehenderit dolores omnis quidem asperiores, esse temporibus officia facere dolor! Culpa et veritatis id fuga laboriosam eum. Ut, ipsa dolore distinctio itaque vel sapiente. Ipsum impedit, voluptate numquam asperiores incidunt doloribus? Adipisci, et maxime!</p>
+      </section>
+
+      <aside class="bdr">
+        <h1>More About Us</h1>
+      </aside>
+    </div>
+    <footer class="bdr">Copyright Shashwat Singh 2021</footer>
+  </body>
+</html>
